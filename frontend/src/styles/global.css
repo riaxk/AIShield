@@ -1,0 +1,219 @@
+:root {
+  --steel: #687079;
+  --ice: #d5e6f3;
+  --orange: #ff581f;
+
+  --graphite: #303840;
+  --dark: #252d35;
+  --muted: #647583;
+  --line: #a9bdcc;
+  --surface: #e3edf5;
+  --white: #f3f7fa;
+
+  --font-display: "Chakra Petch", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  font-family: var(--font-body);
+  color: var(--graphite);
+  background: var(--ice);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+button {
+  transition: background 160ms, color 160ms,
+    border-color 160ms, transform 160ms;
+}
+
+button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: 29px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+::selection {
+  background: var(--orange);
+  color: var(--dark);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #91a4b3;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.primary-button,
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 9px 16px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.primary-button {
+  background: var(--orange);
+  color: var(--dark);
+}
+
+.primary-button:hover:not(:disabled) {
+  background: #ff7547;
+}
+
+.secondary-button {
+  background: transparent;
+  color: var(--graphite);
+  border-color: var(--line);
+}
+
+.secondary-button:hover:not(:disabled) {
+  background: var(--surface);
+  border-color: var(--steel);
+}
+
+select,
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background: var(--surface);
+  color: var(--graphite);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  outline: none;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  border-color: var(--orange);
+}
+
+pre {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 1.7;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  margin: 0;
+}

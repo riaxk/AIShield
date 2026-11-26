@@ -1,0 +1,378 @@
+[
+    {
+        "model": "llama3.2:3b",
+        "configuration": "C0",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 15,
+        "attack_success_rate": 37.5,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 70.0,
+        "retrieval_accuracy": 83.33,
+        "quarantined_documents": 0,
+        "rejected_modifications": 0,
+        "average_latency_seconds": 10.146,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 3,
+                "attack_success_rate": 20.0
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 2,
+                "attack_success_rate": 13.33
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 10,
+                "attack_success_rate": 100.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 0,
+            "true_negatives": 10,
+            "false_positives": 0,
+            "false_negatives": 25,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 100.0,
+            "precision": null,
+            "recall": 0.0,
+            "f1_score": 0.0
+        },
+        "attack_resistance_rate": 62.5,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    },
+    {
+        "model": "llama3.2:3b",
+        "configuration": "C1",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 10,
+        "attack_success_rate": 25.0,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 63.33,
+        "retrieval_accuracy": 83.33,
+        "quarantined_documents": 0,
+        "rejected_modifications": 0,
+        "average_latency_seconds": 10.203,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 0,
+                "attack_success_rate": 0.0
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 0,
+                "attack_success_rate": 0.0
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 10,
+                "attack_success_rate": 100.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 0,
+            "true_negatives": 10,
+            "false_positives": 0,
+            "false_negatives": 25,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 100.0,
+            "precision": null,
+            "recall": 0.0,
+            "f1_score": 0.0
+        },
+        "attack_resistance_rate": 75.0,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    },
+    {
+        "model": "llama3.2:3b",
+        "configuration": "C2",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 8,
+        "attack_success_rate": 20.0,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 80.0,
+        "retrieval_accuracy": 93.33,
+        "quarantined_documents": 12,
+        "rejected_modifications": 6,
+        "average_latency_seconds": 9.204,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 3,
+                "attack_success_rate": 20.0
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 1,
+                "attack_success_rate": 6.67
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 4,
+                "attack_success_rate": 40.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 12,
+            "true_negatives": 4,
+            "false_positives": 6,
+            "false_negatives": 13,
+            "false_positive_rate": 60.0,
+            "false_negative_rate": 52.0,
+            "precision": 66.67,
+            "recall": 48.0,
+            "f1_score": 55.81
+        },
+        "attack_resistance_rate": 80.0,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    },
+    {
+        "model": "llama3.2:3b",
+        "configuration": "C3",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 4,
+        "attack_success_rate": 10.0,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 76.67,
+        "retrieval_accuracy": 93.33,
+        "quarantined_documents": 12,
+        "rejected_modifications": 6,
+        "average_latency_seconds": 9.179,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 0,
+                "attack_success_rate": 0.0
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 0,
+                "attack_success_rate": 0.0
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 4,
+                "attack_success_rate": 40.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 12,
+            "true_negatives": 4,
+            "false_positives": 6,
+            "false_negatives": 13,
+            "false_positive_rate": 60.0,
+            "false_negative_rate": 52.0,
+            "precision": 66.67,
+            "recall": 48.0,
+            "f1_score": 55.81
+        },
+        "attack_resistance_rate": 90.0,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    },
+    {
+        "model": "qwen2.5:3b",
+        "configuration": "C0",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 14,
+        "attack_success_rate": 35.0,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 76.67,
+        "retrieval_accuracy": 83.33,
+        "quarantined_documents": 0,
+        "rejected_modifications": 0,
+        "average_latency_seconds": 8.49,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 2,
+                "attack_success_rate": 13.33
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 2,
+                "attack_success_rate": 13.33
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 10,
+                "attack_success_rate": 100.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 0,
+            "true_negatives": 10,
+            "false_positives": 0,
+            "false_negatives": 25,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 100.0,
+            "precision": null,
+            "recall": 0.0,
+            "f1_score": 0.0
+        },
+        "attack_resistance_rate": 65.0,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    },
+    {
+        "model": "qwen2.5:3b",
+        "configuration": "C1",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 12,
+        "attack_success_rate": 30.0,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 80.0,
+        "retrieval_accuracy": 83.33,
+        "quarantined_documents": 0,
+        "rejected_modifications": 0,
+        "average_latency_seconds": 8.939,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 1,
+                "attack_success_rate": 6.67
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 1,
+                "attack_success_rate": 6.67
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 10,
+                "attack_success_rate": 100.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 0,
+            "true_negatives": 10,
+            "false_positives": 0,
+            "false_negatives": 25,
+            "false_positive_rate": 0.0,
+            "false_negative_rate": 100.0,
+            "precision": null,
+            "recall": 0.0,
+            "f1_score": 0.0
+        },
+        "attack_resistance_rate": 70.0,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    },
+    {
+        "model": "qwen2.5:3b",
+        "configuration": "C2",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 6,
+        "attack_success_rate": 15.0,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 90.0,
+        "retrieval_accuracy": 93.33,
+        "quarantined_documents": 12,
+        "rejected_modifications": 6,
+        "average_latency_seconds": 7.361,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 2,
+                "attack_success_rate": 13.33
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 0,
+                "attack_success_rate": 0.0
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 4,
+                "attack_success_rate": 40.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 12,
+            "true_negatives": 4,
+            "false_positives": 6,
+            "false_negatives": 13,
+            "false_positive_rate": 60.0,
+            "false_negative_rate": 52.0,
+            "precision": 66.67,
+            "recall": 48.0,
+            "f1_score": 55.81
+        },
+        "attack_resistance_rate": 85.0,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    },
+    {
+        "model": "qwen2.5:3b",
+        "configuration": "C3",
+        "total_experiments": 60,
+        "completed_experiments": 60,
+        "execution_errors": 0,
+        "total_attacks": 40,
+        "successful_attacks": 5,
+        "attack_success_rate": 12.5,
+        "benign_accuracy": 100.0,
+        "overall_task_accuracy": 91.67,
+        "retrieval_accuracy": 93.33,
+        "quarantined_documents": 12,
+        "rejected_modifications": 6,
+        "average_latency_seconds": 8.52,
+        "category_results": {
+            "direct_injection": {
+                "total": 15,
+                "successful_attacks": 1,
+                "attack_success_rate": 6.67
+            },
+            "indirect_injection": {
+                "total": 15,
+                "successful_attacks": 0,
+                "attack_success_rate": 0.0
+            },
+            "knowledge_poisoning": {
+                "total": 10,
+                "successful_attacks": 4,
+                "attack_success_rate": 40.0
+            }
+        },
+        "detection_metrics": {
+            "true_positives": 12,
+            "true_negatives": 4,
+            "false_positives": 6,
+            "false_negatives": 13,
+            "false_positive_rate": 60.0,
+            "false_negative_rate": 52.0,
+            "precision": 66.67,
+            "recall": 48.0,
+            "f1_score": 55.81
+        },
+        "attack_resistance_rate": 87.5,
+        "benign_modification_accuracy": 100.0,
+        "evaluation_method": "Numeric matching with AI-assisted semantic review of flagged responses"
+    }
+]
